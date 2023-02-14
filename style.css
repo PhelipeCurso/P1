@@ -42,6 +42,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:82px;
 }
 .apresentacao__conteudo{
     width: 50%;
@@ -106,4 +107,18 @@ body{
     font-family: 'Montserrat',sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+    flex-direction: column-reverse;}
+    .apresentacao__conteudo{
+    width: auto;
+    }
 }
